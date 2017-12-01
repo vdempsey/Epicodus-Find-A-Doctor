@@ -1,6 +1,6 @@
 {
-  "name": "gulp-template",
-  "description": "#### _Name of the project, Month XX, 2017_",
+  "name": "find-a-doctor",
+  "description": "App to find a doctor",
   "main": "index.js",
   "authors": [
     "Valia Dempsey <valentinaml@gmail.com>"

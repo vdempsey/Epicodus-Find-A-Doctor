@@ -1,7 +1,7 @@
 {
-  "name": "gulp-template",
+  "name": "find-a-doctor",
   "version": "1.0.0",
-  "description": "#### _Name of the project, Month XX, 2017_",
+  "description": "Find a doctor app",
   "main": "index.js",
   "scripts": {
     "test": "karma start karma.conf.js"
