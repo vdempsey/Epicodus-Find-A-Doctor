@@ -19,7 +19,7 @@ let displayData = function(results) {
     });
   }
   else {
-      $('.output').append(`<li>Your search did not return any results. Please try again</li>`);
+      $('.output').append(`<li>Your search did not return any results. Please try again.</li>`);
     }
 
   };

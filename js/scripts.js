@@ -11,7 +11,7 @@ export class Doctor {
       displayData(results);
     })
     .fail(function() {
-      alert('Something went wrong');
+      alert('Something went wrong. Please try again. If you continue having this issues, please contact give us a call (888) - XXX - XXXX');
     });
   }
 
