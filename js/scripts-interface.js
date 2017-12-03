@@ -19,7 +19,7 @@ let displayData = function(results) {
     });
   }
   else {
-      $('.output').append(`<li>Please try a different word for your condition</li>`);
+      $('.output').append(`<li>Your search did not return any results. Please try again</li>`);
     }
 
   };
@@ -28,11 +28,15 @@ let displayData = function(results) {
 $(document).ready(function() {
 
   $("form#find").submit(function(event) {
-    let condition = $("#condition").val();
     event.preventDefault();
-
-    let newSearch = new Doctor(condition);
-    let apiResults = newSearch.apiConstructor(displayData);
+    $('.output').empty();
+    let search = $("#search").val();
+    let newSearch = new Doctor(search);
+    if (document.getElementById("search").value.length == 0) {
+      $('.output').append(`<p>Please enter your search</p>`);
+    } else {
+      let apiResults = newSearch.apiConstructor(displayData);
+    }
   });
 
   $(".btn-error").click(function(event) {
