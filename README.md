@@ -9,7 +9,7 @@
 
 ## Description
 
-_This is an application which helps a user to find a doctor in Portland, Or. The user can search by condition or by Dr's name or specialty. It uses API provided by https://developer.betterdoctor.com/. _
+_This is an application which helps a user to find a doctor in Portland, Or. The user can search by condition or by Dr's name or specialty. It uses API provided by https://developer.betterdoctor.com/._
 
 
 ## Setup/Installation Requirements
@@ -38,8 +38,8 @@ _This is an application which helps a user to find a doctor in Portland, Or. The
 | ------------- |:-------------| :-----|
 | Search term for medical condition:      | acne | **Kristina Jacobson**<br>9775 SW Wilshire St, Portland OR<br>5033501420<br>_currently accepting new patients_<br><br>**Charlotte Tsai**<br>3600 N Interstate Ave, Portland OR<br>5032859321 / https://healthy.kaiserpermanente.org/<br>_currently accepting new patients_<br><br>**Deborah Altemus**<br>800 SW 13th Ave, Portland OR<br>5032741697<br>_currently accepting new patients_ |
 | Search Term for specific doctor      | Yoon      |   **Jerry Yoon** <br> 5528 SE Powell Blvd, Portland OR <br> 5037773999 <br> _currently accepting new patients_ |
-| Search Term: | empty input     |  Please enter your search |
-| Search Term for condition that does not return any matches in API results: | fever     | Your search did not return any results. Please try again. |
+| Search Term: | empty inputs     |  Please enter your search |
+| Search Term for condition or doctor that does not return any matches in API results: | fever     | Your search did not return any results. Please try again. |
 | When API request error occurs, the user will get an alert. | fever     | Something went wrong. Please try again. If you continue having this issues, please contact give us a call (888) - XXX - XXXX')|
 
 ### Future Improvements
