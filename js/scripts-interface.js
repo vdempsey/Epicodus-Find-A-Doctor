@@ -28,30 +28,30 @@ let displayData = function(results) {
 $(document).ready(function() {
 
   $("#name").on("click", function() {
-    $("#condition").val("")
+    $("#condition").val("");
     $(".output").empty();
   });
   $("#condition").on("click", function() {
-    $("#name").val("")
+    $("#name").val("");
     $(".output").empty();
   });
   $(".btn").on("click", function() {
     $("#name").val("");
-    $("#condition").val("")
+    $("#condition").val("");
     $(".output").empty();
   });
   $("form#find").submit(function(event) {
     event.preventDefault();
     $('.output').empty();
     let name = $("#name").val();
-    let simptom = $("#condition").val();
+    let symptom = $("#condition").val();
     let newNameSearch = new Doctor(name);
-    let newConditionSearch = new Doctor(simptom);
+    let newConditionSearch = new Doctor(symptom);
     if (document.getElementById("name").value.length == 0 && document.getElementById("condition").value.length == 0) {
       $('.output').append(`<p>Please enter your search</p>`);
     } else
     if (document.getElementById("name").value.length == 0 && document.getElementById("condition").value.length != 0) {
-      let apiResultsCondition = newConditionSearch.findBySimptom(displayData);
+      let apiResultsCondition = newConditionSearch.findBySymptom(displayData);
     } else {
       let apiResultsName = newNameSearch.findByName(displayData);
     }
