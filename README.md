@@ -44,7 +44,7 @@ _This is an application which helps a user to find a doctor in Portland, Or. The
 
 ### Known Bugs / Potential Improvements
 
-_At the current state of the project the search results will display any doctor that has a matching search term in their api results block (example: bio). If you search for "Ghandi", the list contains the names of doctors, who's first and last name do not match "Ghandi". _
+_At the current state of the project the search results will display any doctor that has a matching search term in their api results block (example: bio). If you search for "Ghandi", the list contains the names of doctors, who's first and last name do not match "Ghandi"._
 
 _Need more CSS work to create a layout and improve the flow of components._
 

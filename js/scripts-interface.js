@@ -19,7 +19,7 @@ let displayData = function(results) {
     });
   }
   else {
-      $('.output').append(`<li>Your search did not return any results. Please try again.</li>`);
+      $('.output').append(`<p>Your search did not return any results. Please try again.</p>`);
     }
 
   };
@@ -27,15 +27,33 @@ let displayData = function(results) {
 
 $(document).ready(function() {
 
+  $("#name").on("click", function() {
+    $("#condition").val("")
+    $(".output").empty();
+  });
+  $("#condition").on("click", function() {
+    $("#name").val("")
+    $(".output").empty();
+  });
+  $(".btn").on("click", function() {
+    $("#name").val("");
+    $("#condition").val("")
+    $(".output").empty();
+  });
   $("form#find").submit(function(event) {
     event.preventDefault();
     $('.output').empty();
-    let search = $("#search").val();
-    let newSearch = new Doctor(search);
-    if (document.getElementById("search").value.length == 0) {
+    let name = $("#name").val();
+    let simptom = $("#condition").val();
+    let newNameSearch = new Doctor(name);
+    let newConditionSearch = new Doctor(simptom);
+    if (document.getElementById("name").value.length == 0 && document.getElementById("condition").value.length == 0) {
       $('.output').append(`<p>Please enter your search</p>`);
+    } else
+    if (document.getElementById("name").value.length == 0 && document.getElementById("condition").value.length != 0) {
+      let apiResultsCondition = newConditionSearch.findBySimptom(displayData);
     } else {
-      let apiResults = newSearch.apiConstructor(displayData);
+      let apiResultsName = newNameSearch.findByName(displayData);
     }
   });
 

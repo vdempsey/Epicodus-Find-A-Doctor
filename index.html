@@ -15,12 +15,18 @@
         <h1>Find a doctor</h1>
         <p>To find a doctor in Portland area, please enter your medical condition to find the specialist. If you already know who you want to see, please enter doctor's name.</p>
         <form id="find">
-          <label for="condition">SEARCH</label>
-          <input type="text" name="condition" id="search">
-          <button type="submit" class="btn-success">ENTER</button>
-          <button type="reset" class="btn-error">RESET</button>
+          <div class="section">
+            <label for="name">Search by name</label>
+            <input type="text" name="name" id="name" class="inputs">
+          </div>
+          <div class="section">
+          <label for="name">Search by condition</label>
+          <input type="text" name="condition" id="condition" class="inputs">
+          </div>
+          <button type="submit" class="btn-success" class="btn">FIND</button>
+          <button type="reset" class="btn-error" class="btn">RESET</button>
         </form>
-        <div class="output"></div>
+        <div class="output" class="clearit"></div>
       </div>
     </div>
   </body>
