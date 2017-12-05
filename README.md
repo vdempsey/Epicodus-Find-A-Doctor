@@ -42,9 +42,9 @@ _This is an application which helps a user to find a doctor in Portland, Or. The
 | Search Term for condition that does not return any matches in API results: | fever     | Your search did not return any results. Please try again. |
 | When API request error occurs, the user will get an alert. | fever     | Something went wrong. Please try again. If you continue having this issues, please contact give us a call (888) - XXX - XXXX')|
 
-### Known Bugs / Potential Improvements
+### Future Improvements
 
-_At the current state of the project the search results will display any doctor that has a matching search term in their api results block (example: bio). If you search for "Ghandi", the list contains the names of doctors, who's first and last name do not match "Ghandi"._
+_Display more info for each doctor(example: Title, specialty, photo)._
 
 _Need more CSS work to create a layout and improve the flow of components._
 
